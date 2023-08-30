@@ -11,3 +11,4 @@ build:
     - docker build -t ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG} -f ./Dockerfile .
     - docker push ${CI_REGISTRY_IMAGE}:${CI_COMMIT_REF_SLUG}
   when: manual
+
